@@ -12,13 +12,13 @@ const commentList = document.querySelector("#list")
 let counting = true
 
 const countSeconds = () => {
-    rawInt += 1
-    seconds.innerText = rawInt
+    if (counting == true) {
+        rawInt += 1
+        seconds.innerText = rawInt
+    }
 }
 let startCounter = () => {
-    if (counting == true) {
         (setInterval(countSeconds, 1000))
-    } 
 }
 
 pauseButton.addEventListener("click", () => {
