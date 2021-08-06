@@ -16,9 +16,9 @@ const countSeconds = () => {
     seconds.innerText = rawInt
 }
 let startCounter = () => {
-    if (counting) {
+    if (counting == true) {
         (setInterval(countSeconds, 1000))
-    }
+    } 
 }
 
 pauseButton.addEventListener("click", () => {
@@ -27,8 +27,6 @@ pauseButton.addEventListener("click", () => {
 })
 
 document.addEventListener("DOMContentLoaded", startCounter)
-
-
 
 
 
