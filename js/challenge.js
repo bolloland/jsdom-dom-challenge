@@ -21,6 +21,8 @@ let startCounter = () => {
         (setInterval(countSeconds, 1000))
 }
 
+
+
 pauseButton.addEventListener("click", () => {
     counting = !counting
     console.log(counting)
